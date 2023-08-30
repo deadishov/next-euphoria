@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "image": "https://s3-alpha-sig.figma.com/img/96c8/6912/d491d421800e62998b9af7c838cc25d1?Expires=1692576000&Signature=M8BXpuFexRUbRPDkjifwJf2fXVcuRJSPdgdN-0DsBGTZJth776tDVqaX4knGnB9ALhXy3fNpOwt1U4EFyAJ79eTohQNdTmztoGR9jltL7Nz-EZhqkRyenb5Wyzm0RrTIU6njsqBQb8CAqAVzLcXyGSRraR90f~xl1mHFXebFe5e0TjAzLJKD0w~JC5JKAPEvD5Kx-22dzX3R-F~7Pgw6BKo9y7jLawc-75~4eI-dpsiaa4QzLUM2kIZy3UCabNsufd6-Rpz4SnvgPxCa9VQCynvI3aAgsbcPVKObTnHeNBz0QrKWQ1vEdLTz5Z5I8P1~PsaKzjxIYF82S~HSDlRi-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Summer Value Pack",
+        "buttonText": "Shop now!",
+        "category": "T-shirt / Tops",
+        "tagline": "cool / colorful / comfy"
+    },
+    {
+        "id": "2",
+        "image": "https://phonoteka.org/uploads/posts/2021-04/1618651885_4-phonoteka_org-p-fon-dlya-reklami-odezhdi-4.jpg",
+        "headline": "Don't miss SALES!",
+        "buttonText": "Let's go!"
+    }
+]

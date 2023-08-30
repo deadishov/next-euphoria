@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "image_url": "https://s3-alpha-sig.figma.com/img/8a89/cb09/447ed0a0c95b031a186f5d6fca1dbfbe?Expires=1692576000&Signature=oYuL43nvQCkzBI6aBUx0VZ5UEt1CyO5~~Z27hsVV5HaS4gfvoZC6ctRQctStGVKpRaTkMf0AEpgRKTiiuBCJJv4gXG7OgnXso7lVDTcO~VpZQJDjUsAUGSnl9RJ2v4kEQ2oLqjxF1ky4k8kEvleB29OQr2WAbhPcU0Wqtr8Xoh3S1ity6BhTs~QfFoKHx9iGigg2fXi3U~f7Z9424pmH8PBJVhyesmiKZXbNm29zM-O7MMZ71RYPAZ3B0sajAg~FMjHdKkUOPSut5Vgc9ljjLq3ELC9dvH1lcYQ4X6IVwu~IfZt3vdk8L2YF7PUHoJc0MiNbqwi9frCYrwiYZ5PtJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Hawaiian Shirts",
+        "tagline": "Dress up in summer vibe",
+        "salesline": "UPTO 50% OFF"
+    },
+    {
+        "id": "2",
+        "image_url": "https://s3-alpha-sig.figma.com/img/44af/164d/caf6c91976553cb50ba6826ae2de0bc5?Expires=1692576000&Signature=HLG0R8hECJiCScDgrKqtof~ovDaUXlNFhwJPUt1qeuVufH1xw4v756sMlqyCDoYIlKJAigiRgn2zuwbuHH4LmRlWCeNTmk1FplbZ~0EkHuJfKF8XUhqcbL-wr~TuLP6WfFe6BUGHpa1ozcAakRMw3r97ov2kndANEBU4BkD2SSS6rUTSUN9sa-7Co-qHaGNv8BCMRsVrVTiZEqnsiL3b2MJofTwZySQn-yE3aH9VKiAZMB4Fj~3VNtj44Deuwgsqzo7QRvGKwZopYkWcmrnRNXLOsPKrpdcvG-DD5d390IsyJu3-6ynA4mmsG-AjLgImmkdnNqSQY3Orxw4ERzuX1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Printed T-Shirt",
+        "tagline": "New Designs Every Week",
+        "salesline": "UPTO 40% OFF"
+    },
+    {
+        "id": "3",
+        "image_url": "https://s3-alpha-sig.figma.com/img/cc0b/4fba/76b046b1f4fe7dfb452989b94ab6881a?Expires=1692576000&Signature=MKv2g-EAHsSazzz08HwTGZ0BP1v5UYEjMVOI61K3ZhQ3DhHgg2CWENdT0RZaByHKaw-IzHpPnA~F3G1OWOhdkVnNzINHceXgA~E5GBLeavWq3HbCIspjFCxHLrqw1pUwBIhQWN~xU0SHQn59GskTDKCmEuYpIlFPE2ATFmvZy-5vcfcQddMdfmKXy5ZSjEmWBjFcr5ksgpLj9E1xIdyuRMywcqeWhW1OP7uYSneeNHTOXPuBv7hcCwSq7t~sq5kTSgz8Ux7cKUGTEcRNMi~3QfauRdFwwPgn8Kp9Yb8uN3UtwGAvaKI-oHXW-R06hE0bI-SW2X6bA3gjSRBe8cDs2Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Cargo Joggers",
+        "tagline": "Move with style & comfort",
+        "salesline": "UPTO 50% OFF"
+    },
+    {
+        "id": "4",
+        "image_url": "https://s3-alpha-sig.figma.com/img/35ba/f6bd/7d29bb88d169abf43d9a0c5a4a067a9b?Expires=1692576000&Signature=Fw22pHXczyhToYYW0mnvG-x5zVNmIoSqmlEHVGVTDmmDWDhhb5CN59Zb-NeNrDkUjwHmSBnDQtnHo4S19brqI5cMwCv3DbOfIMgeX3SyavzMk0OTxgM67pPDO~WkDWd1o7Cz-uYKxy4-nCiFrzK0HrXhw1R52IckUghmpC7esckxrAMLoyX3d6XPhb~TelCWfenyDw5qg9TX5-9yrchdMfgLuFXFSI~y5aYm5MkMxVGIGQxBmipMMKgR74DMkzg8umaQPYOJIeDBITgeHWVZwfd7acMQQ0MjSsmFzXnmC5m7OffNkB8XU7F5hf2eWSexXuywaRi0qDX5xQ9GjB3PMA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Urban Shirts",
+        "tagline": "Live In Confort",
+        "salesline": "FLAT 60% OFF"
+    },
+    {
+        "id": "5",
+        "image_url": "https://s3-alpha-sig.figma.com/img/c669/98e8/95ab98d5b65890f4130278ba5e8e7593?Expires=1692576000&Signature=Lp9BSMHErbPPuN6N7UBjbeDh3oYZEfb1vMHDnHDztEOODnr27AKShipR9EuMETR3acYWjBQGkMNm7cyjcgADYq~WK8ACGKlL41x5u3-Co6fM9lVTE~AD4ADfsoMfoqP2yaAqkl40bInL0xSwxZ3x6a3X7beM3ssDfbBWKlk1su8dieGwCDdASMgmk5eZDDtkfME8oC2nXplIdAAnn4CFHY9cI8dWGOPs-u~NUKUdq~SCGgsd~glcNnePYI-N780MMaz5Sgk~qaSivPMWR-wiFc49bjB8ie7S08J8JTIWprq4ltijRNG3FT5nfswdJND2mc7xb0cNjNxx01BBgxs3Ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "headline": "Oversized T-Shirts",
+        "tagline": "Street Style Icon",
+        "salesline": "FLAT 60% OFF"
+    }
+]

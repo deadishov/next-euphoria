@@ -1,0 +1,19 @@
+.listItem {
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        width: 50%;
+    }
+
+    &:hover {
+        transform: translateY(-2%);
+
+        @media (max-width: 900px) {
+            transform: translateY(0);
+            transform: translateX(2%);
+        }
+    }
+
+}

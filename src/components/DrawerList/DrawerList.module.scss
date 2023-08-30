@@ -1,0 +1,46 @@
+.linksWrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: #807D7E;
+
+    @media(max-width: 1300px) {
+        gap: 2rem
+    }
+
+    @media(max-width: 1150px) {
+        gap: 1.5rem
+    }
+
+    @media(max-width: 900px) {
+        display: none;
+    }
+
+    .headerLink {
+        color: inherit;
+        font-size: 1.375rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s;
+
+        @media(max-width: 1300px) {
+            font-size: 1.125rem;
+        }
+
+        @media(max-width: 1150px) {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            color: #3C4242;
+        }
+    }
+}
+
+.burgerLink {
+    transition: color 0.2s;
+
+    &:hover {
+        color: #3C4242;
+    }
+}
