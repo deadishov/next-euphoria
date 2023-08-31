@@ -85,7 +85,8 @@ export const ArrivalBlock: React.FC<ArrivalBlockProps> = ({ list }) => {
                                             sm: '14rem',
                                             xs: '12.375rem',
                                         },
-                                        borderRadius: '.75rem'
+                                        borderRadius: '.75rem',
+                                        cursor: 'pointer'
                                     }}
                                     image={slide.image_url}
                                 />

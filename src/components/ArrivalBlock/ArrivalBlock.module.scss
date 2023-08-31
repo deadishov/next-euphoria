@@ -1,16 +1,19 @@
 .sliderWrapper {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     .slider {
         padding-top: 70px;
         padding-bottom: 95px;
 
         .slide {
-            cursor: pointer;
-            transition: transform 0.3s;
+            .slideImage {
+                transition: transform 0.3s;
 
-            &:hover {
-                transform: translateY(-3%);
+                &:hover {
+                    transform: translateY(-3%);
+                }
             }
         }
 
@@ -21,37 +24,29 @@
             font-weight: 700;
             line-height: normal;
             letter-spacing: 0.2px;
+            cursor: default;
+        }
+
+        @media (max-width: 1370px) {
+            max-width: 90%;
         }
 
     }
 
     .sliderNav {
         position: absolute;
-        padding: 0 2%;
-        width: 100%;
+        width: 90%;
         top: calc(50% - 48px);
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        @media (min-width: 400px) {
-            padding: 0 10%;
+        @media (max-width: 700px) {
+            width: 70%;
         }
 
-        @media (min-width: 700px) {
-            padding: 0 3%;
-        }
-
-        @media (min-width: 1000px) {
-            padding: 0 2%;
-        }
-
-        @media (min-width: 1200px) {
-            padding: 0 2%;
-        }
-
-        @media (min-width: 1300px) {
-            padding: 0 5%;
+        @media (max-width: 450px) {
+            width: 85%;
         }
 
         .arrowLeft,

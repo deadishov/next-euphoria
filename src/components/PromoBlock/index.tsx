@@ -30,7 +30,7 @@ export const PromoBlock: React.FC<{ block: BlockProps }> = ({ block }) => {
                 boxShadow: '2px 2px 10px 0px rgba(0, 0, 0, 0.40)',
                 width: {
                     lg: '100%',
-                    md: '100%',
+                    md: '80%',
                     sm: '80%',
                     xs: '80%'
                 },

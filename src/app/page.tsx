@@ -11,6 +11,7 @@ import { ArrivalBlock } from '../components/ArrivalBlock';
 import { BigSavingZone } from '../components/BigSavingZone';
 import styles from './page.module.scss'
 import '../scss/app.scss'
+import { MainSliderList } from '@/components/MainSliderList';
 
 export default function Home() {
   const filtredArr = slidesArr.filter(slide => slide.id < '6')
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <MainSlider list={filtredArr} />
+      <MainSlider list={filtredArr} children={<MainSliderList list={filtredArr} />} />
       <Container>
         <List sx={{
           display: 'flex',

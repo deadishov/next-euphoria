@@ -1,7 +1,7 @@
 "use client";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { useRef } from 'react';
+import { Swiper } from 'swiper/react';
+import { ReactNode, useRef } from 'react';
 import { Swiper as SwiperType } from 'swiper';
 
 import 'swiper/scss';
@@ -13,11 +13,10 @@ import arrowLeft from '../../assets/img/arrowLeft.svg'
 import arrowRightDisabled from '../../assets/img/rightDisabled.svg'
 import arrowLeftDisabled from '../../assets/img/leftDisabled.svg'
 import styles from './MainSlider.module.scss'
-import { Container } from '@mui/system';
 import React from 'react';
 import Image from 'next/image'
 
-interface Slide {
+export interface Slide {
     id: string,
     image: string,
     headline: string,
@@ -26,11 +25,12 @@ interface Slide {
     buttonText?: string
 }
 
-interface MainSliderProps {
-    list: Slide[]
+export interface MainSliderProps {
+    list: Slide[],
+    children: ReactNode
 }
 
-export const MainSlider: React.FC<MainSliderProps> = ({ list }) => {
+export const MainSlider: React.FC<MainSliderProps> = ({ list, children }) => {
     const swiperRef = useRef<SwiperType>();
     const [slideCount, setSlideCount] = React.useState(1)
 
@@ -55,37 +55,7 @@ export const MainSlider: React.FC<MainSliderProps> = ({ list }) => {
                 slidesPerView={1}
                 spaceBetween={50}
             >
-                {list.map((slide) => (
-                    <SwiperSlide
-                        style={{
-                            backgroundImage: `url(${slide.image})`,
-                            display: 'flex',
-                            alignItems: 'center'
-                        }}
-                        className={styles.slide}
-                        key={slide.id}>
-                        <Container
-                            className={styles.slideContent}
-                            sx={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '40px',
-                                maxWidth: {
-                                    xl: '1200px',
-                                    lg: '1000px',
-                                    md: '760px',
-                                    sm: '630px'
-                                }
-                            }}>
-                            {slide?.category && <h3 className={styles.slideTitle}>{slide.category}</h3>}
-                            <h1 className={styles.slideHeadline}>{slide.headline}</h1 >
-                            {slide?.tagline && <h3 className={styles.slideTitle}>{slide.tagline}</h3>}
-                            <div>
-                                {slide.buttonText && <button className={styles.slideButton}>{slide.buttonText}</button>}
-                            </div>
-                        </Container>
-                    </SwiperSlide>
-                ))}
+                {children}
                 <div className={styles.sliderNav}>
                     <Image
                         className={slideCount === 1 ? styles.arrowLeftDisabled : styles.arrowLeft}
