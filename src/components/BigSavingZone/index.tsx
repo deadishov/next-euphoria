@@ -23,10 +23,20 @@ export const BigSavingZone: React.FC<SavingZoneProps> = ({ list }) => {
         <Box sx={{
             pt: '70px',
             pb: '100px',
-            display: 'grid',
+            display: {
+                xs: 'flex',
+                md: 'grid'
+            },
+            height: '100%',
             gridTemplateColumns: `repeat(6, 16%)`,
             gridTemplateRows: 'repeat(2, 393px)',
             gap: '10px',
+            flexDirection: 'column',
+            maxWidth: {
+                md: 'none',
+                xs: '80%'
+            },
+            m: '0 auto'
         }}>
             {list.map((card, index) => (
                 <Box
@@ -35,7 +45,8 @@ export const BigSavingZone: React.FC<SavingZoneProps> = ({ list }) => {
                     gridColumn={index === 3 || index === 4 ? 'span 3' : 'span 2'}
                     sx={{
                         backgroundImage: `url(${card.image_url})`,
-                        backgroundSize: 'cover'
+                        backgroundSize: 'cover',
+                        width: '100%'
                     }}
                 >
                     <Box className="card__content">

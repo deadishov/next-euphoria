@@ -4,14 +4,12 @@ import { AppBar, Badge, Box, Toolbar } from '@mui/material'
 import Image from 'next/image';
 
 import logoSvg from '../../assets/img/logo.svg'
-import searchSvg from '../../assets/img/search.svg'
 import userSvg from '../../assets/img/user.svg'
 import favSvg from '../../assets/img/favorite.svg'
 import cartSvg from '../../assets/img/cart.svg'
 import styles from './Header.module.scss'
-import { Drawer } from '../Drawer';
-import { BigSavingZone } from '../BigSavingZone';
-import { DrawerList } from '../DrawerList';
+import { HeaderBurger } from '../HeaderBurger';
+import { Search } from '../Search';
 
 
 export const appBarStyles = {
@@ -58,12 +56,7 @@ export const Header = () => {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
-                        padding: {
-                            xl: 0,
-                            lg: 0,
-                            md: 0,
-                            sm: 0
-                        }
+                        padding: 0
                     }}>
                         <Image style={{ cursor: 'pointer' }} src={logoSvg} alt="LOGO" />
                         <div className={styles.linksWrapper}>
@@ -71,10 +64,7 @@ export const Header = () => {
                                 <a href='#' key={text} className={styles.headerLink}>{text}</a>
                             ))}
                         </div>
-                        <div className={styles.searchWrapper}>
-                            <input className={styles.search} placeholder='Search' type="text" />
-                            <Image className={styles.searchImg} src={searchSvg} alt="search-icon" />
-                        </div>
+                        <Search />
                         <Box sx={{
                             display: {
                                 md: 'flex',
@@ -100,7 +90,7 @@ export const Header = () => {
                     </Toolbar>
                 </AppBar>
             </Box>
-            <Drawer children={<DrawerList />} />
+            <HeaderBurger />
         </>
     )
 }

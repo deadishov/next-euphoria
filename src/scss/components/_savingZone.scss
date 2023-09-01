@@ -4,6 +4,9 @@
     justify-content: flex-end;
     align-items: center;
     border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 393px;
 
     &__content {
         display: flex;
@@ -11,7 +14,6 @@
         flex-direction: column;
         align-items: flex-start;
         max-width: 155px;
-        // margin-left: auto;
         max-height: 265px;
         height: 100%;
 
@@ -106,7 +108,7 @@
 
     &:nth-child(2) {
         background-position: 90% 10%;
-        background-size: 170%;
+        background-size: cover;
         color: #fff;
         padding-right: 25px;
 
@@ -144,7 +146,6 @@
         .card__title {
             font-size: 32px;
             line-height: 43.922px;
-            /* 137.255% */
             letter-spacing: 0.64px;
         }
     }
@@ -162,12 +163,58 @@
         .card__title {
             font-size: 32px;
             line-height: 43.922px;
-            /* 137.255% */
             letter-spacing: 0.64px;
         }
     }
 
     &__arrow {
         align-self: center;
+    }
+
+    @media (max-width: 1100px) {
+
+        &:nth-child(4),
+        &:last-child {
+            background-size: cover;
+            padding-right: 30px;
+        }
+
+        &:nth-child(2) {
+            background-position: 80% 10%;
+        }
+
+        &__button-block {
+            gap: 15px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        min-height: 270px;
+
+        &__content {
+            .card__title {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .card__salesline {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .card__button-block {
+                .card__arrow {
+                    width: 20px;
+                }
+
+                .card__button {
+                    font-size: 8px;
+                    padding: 8px 12px;
+                }
+            }
+        }
+
+
     }
 }

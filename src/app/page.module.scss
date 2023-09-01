@@ -17,4 +17,8 @@
     background: #8A33FD;
     margin-right: 20px;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1.725rem;
+  }
 }
