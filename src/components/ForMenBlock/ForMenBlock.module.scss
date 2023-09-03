@@ -1,0 +1,51 @@
+.forMen {
+    font-family: 'Core Sans C';
+    padding-top: 70px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    gap: 50px;
+    row-gap: 108px;
+    justify-content: space-between;
+
+    &__card {
+        max-width: 270px;
+    }
+
+    &__image {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__category {
+        color: #2a2f2f;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.715px;
+    }
+
+    &__text {
+        color: #7f7f7f;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.536px;
+    }
+
+    @media (max-width: 1600px) {
+        &__card {
+            max-width: 240px;
+        }
+
+        &__image {
+            max-width: 240px;
+            border-radius: 10px;
+        }
+    }
+
+    @media (max-width: 1175px) {
+        justify-content: space-around;
+    }
+}

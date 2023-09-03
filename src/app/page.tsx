@@ -5,12 +5,14 @@ import slidesArr from '../data/slidesArr.json';
 import promoArr from '../data/promo.json';
 import arrivalArr from '../data/arrival.json';
 import savingZoneArr from '../data/savingZone.json'
+import categoriesForMen from '../data/forMenBlock.json'
 import { PromoBlock } from '../components/PromoBlock';
 import { Container, List } from '@mui/material';
 import { ArrivalBlock } from '../components/ArrivalBlock';
 import { BigSavingZone } from '../components/BigSavingZone';
 import styles from './page.module.scss'
 import '../scss/app.scss'
+import { ForMenBlock } from '@/components/ForMenBlock';
 
 export default function Home() {
   const filtredArr = slidesArr.filter(slide => slide.id < '6')
@@ -19,7 +21,7 @@ export default function Home() {
     <>
       <Header />
       <MainSlider list={filtredArr} />
-      <Container>
+      <Container sx={{ maxWidth: '1240px' }}>
         <List sx={{
           display: 'flex',
           justifyContent: 'center',
@@ -56,6 +58,7 @@ export default function Home() {
         <h3 className={styles.sectionTitle}>
           Categories For Men
         </h3>
+        <ForMenBlock list={categoriesForMen} />
       </Container>
     </>
   )
