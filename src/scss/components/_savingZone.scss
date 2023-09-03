@@ -201,6 +201,9 @@
         }
 
         &:first-child {
+
+            padding-right: 10px;
+
             .card__content {
                 max-width: 100px;
             }
@@ -208,6 +211,7 @@
 
         &:nth-child(2) {
             background-position: 95% 10%;
+            padding-right: 10px;
 
             .card__content {
                 .card__limited-btn {
@@ -252,6 +256,8 @@
 
             .card__content {
                 max-width: 100px;
+                text-align: center;
+                align-items: center;
 
                 .card__title {
                     font-size: 20px;
