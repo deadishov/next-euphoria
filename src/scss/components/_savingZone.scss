@@ -190,12 +190,41 @@
 
     @media (max-width: 600px) {
 
-        min-height: 270px;
+        min-height: 240px;
+
+        &__content {
+            max-width: 100px;
+
+            .card__title {
+                line-height: 20px;
+            }
+        }
+
+        &:first-child {
+            .card__content {
+                max-width: 100px;
+            }
+        }
+
+        &:nth-child(2) {
+            background-position: 95% 10%;
+
+            .card__content {
+                .card__limited-btn {
+                    font-size: 8px;
+                    padding: 8px 12px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            padding-right: 10px;
+        }
 
         &__content {
             .card__title {
                 font-size: 20px;
-                line-height: 30px;
             }
 
             .card__salesline {
@@ -215,6 +244,31 @@
             }
         }
 
+        &:nth-child(4),
+        &:last-child {
 
+            background-position: 55% 0;
+            padding-right: 40px;
+
+            .card__content {
+                max-width: 100px;
+
+                .card__title {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+
+    }
+
+    @media(max-width: 410px) {
+
+        &:nth-child(4),
+        &:last-child {
+            padding-right: 10px;
+
+        }
     }
 }
