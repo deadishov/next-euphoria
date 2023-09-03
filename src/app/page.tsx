@@ -53,6 +53,9 @@ export default function Home() {
           Big Saving Zone
         </h3>
         <BigSavingZone list={savingZoneArr} />
+        <h3 className={styles.sectionTitle}>
+          Categories For Men
+        </h3>
       </Container>
     </>
   )

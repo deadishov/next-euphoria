@@ -285,3 +285,166 @@
         }
     }
 }
+
+.big-poster {
+    border-radius: 12px;
+    display: flex;
+    padding-bottom: 100px;
+
+    .big-card {
+        background-size: cover;
+        width: 100%;
+        height: 640px;
+
+        &-content {
+            color: #fff;
+            max-width: 466px;
+            margin: 0 auto;
+        }
+
+        &-title {
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 50px;
+            letter-spacing: 0.208px;
+            margin-bottom: 30px;
+        }
+
+        &-text {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+
+        &-btn {
+            color: #3C4242;
+            display: inline-flex;
+            padding: 12px 44px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background-color: #fff;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            border: 2px solid #fff;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: #073715;
+                color: #fff;
+                transition: background-color 0.3s, color 0.3s;
+            }
+        }
+
+        &:first-child {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('../../assets/img/big-card-black.png'), lightgray 50% / cover no-repeat;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &:last-child {
+            background-image: url('../../assets/img/big-card-guys.png');
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+
+        @media(max-width: 1200px) {
+            height: 560px;
+
+            &-content {
+                max-width: 380px;
+            }
+
+            &-title {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+
+        .big-card {
+            height: 450px;
+
+            &:first-child {
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                border-bottom-left-radius: 0;
+            }
+
+            &:last-child {
+                background-image: url('../../assets/img/big-card-guys.png');
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+
+        .big-card {
+            height: 400px;
+
+            &-content {
+                max-width: 335px;
+            }
+
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &-text {
+                font-size: 16px;
+            }
+
+            &-btn {
+                padding: 8px 32px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .big-card {
+            height: 315px;
+
+            &-content {
+                max-width: 200px;
+                text-align: center;
+            }
+
+            &-title {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 25px;
+            }
+
+            &-text {
+                font-size: 12px;
+                margin-bottom: 35px;
+            }
+
+            &-btn {
+                padding: 6px 24px;
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -3,6 +3,12 @@
 
 @font-face {
     font-family: 'Core Sans C';
+    src: url('../assets/fonts/CoreSansC-35Light.woff2');
+    font-weight: 300
+}
+
+@font-face {
+    font-family: 'Core Sans C';
     src: url('../assets/fonts/CoreSansC-45Regular.woff2');
     font-weight: normal
 }
@@ -30,33 +36,3 @@
     src: url('../assets/fonts/CoreSansC-85Heavy.woff2');
     font-weight: 800
 }
-
-// @font-face {
-//     font-family: 'Causten';
-//     src: url('../assets/fonts/Causten\ Regular.ttf');
-//     font-weight: normal;
-// }
-
-// @font-face {
-//     font-family: 'Causten';
-//     src: url('../assets/fonts/Causten\ Medium.ttf');
-//     font-weight: 500;
-// }
-
-// @font-face {
-//     font-family: 'Causten';
-//     src: url('../assets/fonts/Causten\ Semi\ Bold.ttf');
-//     font-weight: 600;
-// }
-
-// @font-face {
-//     font-family: 'Causten';
-//     src: url('../assets/fonts/Causten\ Bold.ttf');
-//     font-weight: 700;
-// }
-
-// @font-face {
-//     font-family: 'Causten';
-//     src: url('../assets/fonts/Causten\ Extra\ Bold.ttf');
-//     font-weight: 800;
-// }
