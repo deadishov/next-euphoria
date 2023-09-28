@@ -21,7 +21,14 @@ export default function Home() {
     <>
       <Header />
       <MainSlider list={filtredArr} />
-      <Container sx={{ maxWidth: '1240px' }}>
+      <Container sx={{
+        maxWidth: {
+          lg: '1240px'
+        },
+        padding: {
+          lg: '0'
+        }
+      }}>
         <List sx={{
           display: 'flex',
           justifyContent: 'center',
@@ -50,7 +57,14 @@ export default function Home() {
         </h3>
       </Container>
       <ArrivalBlock list={arrivalArr} />
-      <Container>
+      <Container sx={{
+        maxWidth: {
+          lg: '1240px'
+        },
+        padding: {
+          lg: '0'
+        }
+      }}>
         <h3 className={styles.sectionTitle}>
           Big Saving Zone
         </h3>

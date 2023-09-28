@@ -1,8 +1,8 @@
-import { Box } from '@mui/system'
+import { Box } from '@mui/material'
 import React from 'react'
 import Image from 'next/image'
 import styles from './ForMenBlock.module.scss'
-import { Typography } from '@mui/material'
+import arrow from '@/assets/img/forMen-arrow.svg'
 
 interface ListItem {
     image_url: string,
@@ -19,15 +19,25 @@ export const ForMenBlock: React.FC<ForMenBlockProps> = ({ list }) => {
         <Box
             className={styles.forMen}
             sx={{
-                display: 'flex',
+                display: {
+                    lg: 'grid',
+                    xs: 'flex',
+                },
+                gridTemplateRows: 'repeat(2, 1fr)',
+                gridTemplateColumns: 'repeat(4, 1fr)',
                 alignItems: 'center',
-                flexWrap: 'wrap',
+                flexWrap: {
+                    lg: 'nowrap',
+                    xs: 'wrap'
+                },
                 width: '100%',
-                margin: '0 auto'
+                margin: '0 auto',
+                justifyContent: 'center'
             }}>
             {
                 list.map((item) => (
                     <Box
+                        key={item.image_url}
                         className={styles.forMen__card}
                         sx={{
                             height: '393px'
@@ -38,8 +48,13 @@ export const ForMenBlock: React.FC<ForMenBlockProps> = ({ list }) => {
                             height={393}
                             src={item.image_url}
                             alt="categoty-image" />
-                        <p className={styles.forMen__category}>{item.category}</p>
-                        <p className={styles.forMen__text}>{item.text}</p>
+                        <Box className={styles.forMen__textContent}>
+                            <Box>
+                                <p className={styles.forMen__category}>{item.category}</p>
+                                <p className={styles.forMen__text}>{item.text}</p>
+                            </Box>
+                            <Image src={arrow} width={20} height={14} alt="arrow" />
+                        </Box>
                     </Box>
                 ))
             }
